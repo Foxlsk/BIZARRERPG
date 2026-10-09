@@ -1,4 +1,4 @@
-# BIZARRERPG — Game Documentation
+# ThePurgatory — Game Documentation
 
 ## 1. Core Rules & Attribute System
 
