@@ -1,4 +1,4 @@
-****Theme - Purgatory**
+**Theme - Purgatory**
 
 - **Premise:** You died in the first battle of a great war, but your soul became trapped in a twisted medieval limbo. To attain eternal rest, you must hunt and liberate the spirits of your former brothers-in-arms, who went mad and became guardians of the abyss.
     
