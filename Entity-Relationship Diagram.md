@@ -1,4 +1,4 @@
-# Guide — Figma / BizarreRPG
+# Guide — Figma / ThePurgatory
 
 ## Figma Community link
 
@@ -9,11 +9,11 @@ https://www.figma.com/community/file/1690327958319187452
 1. Open the link above and sign in to Figma.
 2. Click **Open in Figma** (or **Duplicate**) to copy the file into your *Drafts*.
 3. Always work on your copy: the original Community file is not editable.
-4. Rename the file (e.g. `BizarreRPG - Design`) and move it to your project or team.
+4. Rename the file (e.g. `ThePurgatory - Design`) and move it to your project or team.
 
-## Using it with the BizarreRPG ER diagram
+## Using it with the ThePurgatory ER diagram
 
-The ER diagram was generated in FigJam (`BizarreRPG - Modelo ER`) with these entities:
+The ER diagram was generated in FigJam (`ThePurgatory Entity-Relationship Diagram`) with these entities:
 
 | Entity | Description |
 |---|---|
