@@ -1,0 +1,14 @@
+{
+    "Roles": [
+        {
+            "Name": "Player",
+            "Perks": []    
+        },
+        {
+            "Name": "Admin",
+            "Perks": [
+                "All"
+            ]
+        }
+    ]
+}
