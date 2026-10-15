@@ -9,6 +9,7 @@
             "Class": "Iron Penitent",
             "Stamina": 0,
             "Money": 0,
+            "Backpack": [],
             "Stats": [
                 {
                     "Name": "HP",

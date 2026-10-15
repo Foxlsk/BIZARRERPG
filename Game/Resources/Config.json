@@ -1,0 +1,52 @@
+{
+   "Weapons": [
+    {
+      "Name": "Flail of Broken Vows",
+      "Description": "A heavy iron flail wrapped in corroded sacred chains that grow heavier with the wielder's guilt.",
+      "Class": "Iron Penitent",
+      "Price": 180,
+      "Currency": "Souls",
+      "Quantity": 1
+    },
+    {
+      "Name": "Ethereal Soulblade",
+      "Description": "Twin daggers forged from spectral remnants that slice through physical armor directly into the enemy's soul.",
+      "Class": "Shadow Reaper",
+      "Price": 200,
+      "Currency": "Souls",
+      "Quantity": 1
+    },
+    {
+      "Name": "Ashen Censer Mace",
+      "Description": "A hollow ceremonial mace emitting a constant mist of grey embers and funeral ash.",
+      "Class": "Ash Bearer",
+      "Price": 160,
+      "Currency": "Souls",
+      "Quantity": 1
+    },
+    {
+      "Name": "Sightless Stiletto",
+      "Description": "A long, needle-thin rapier without a guard, perfectly balanced for blind combatants relying on acoustic vibrations.",
+      "Class": "Blind Inquisitor",
+      "Price": 175,
+      "Currency": "Souls",
+      "Quantity": 1
+    },
+    {
+      "Name": "Greatsword of the Corrupted Commander",
+      "Description": "A rusted, notched zweihänder that echoes with the agonized screams of a fallen army.",
+      "Class": "Universal",
+      "Price": 350,
+      "Currency": "Souls",
+      "Quantity": 1
+    }
+  ],
+   "Armor": [
+    {
+        
+    }
+   ],
+   "Potions": [],
+   "Tools": [],
+   "Relics": []
+}
