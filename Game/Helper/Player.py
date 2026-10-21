@@ -8,9 +8,9 @@ class PlayerHelper:
 
     def Init():
         base_path = Path(__file__).resolve().parent.parent
-        player_path = base_path / "Resources" / "Player.json"
+        player_path = base_path / "Resources" / "Config.json"
         with open(player_path, "r", encoding="utf-8") as file:
-            PlayerHelper.PlayerResources = json.load(file)
+            PlayerHelper.PlayerResources = json.load(file)["Player"]
 
     def GetPlayerPerks(Role):
         for role in PlayerHelper.PlayerResources.get("Roles", []):

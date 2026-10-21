@@ -1,52 +1,439 @@
 {
-   "Weapons": [
+  "Player": {
+    "Roles": [
+      {
+        "Name": "Player",
+        "Perks": []
+      },
+      {
+        "Name": "Admin",
+        "Perks": [
+          "All"
+        ]
+      }
+    ]
+  },
+  "Weapons": [
     {
       "Name": "Flail of Broken Vows",
-      "Description": "A heavy iron flail wrapped in corroded sacred chains that grow heavier with the wielder's guilt.",
       "Class": "Iron Penitent",
       "Price": 180,
       "Currency": "Souls",
-      "Quantity": 1
+      "Quantity": 1,
+      "Description": "A heavy iron flail wrapped in corroded sacred chains that grow heavier with the wielder's guilt."
     },
     {
       "Name": "Ethereal Soulblade",
-      "Description": "Twin daggers forged from spectral remnants that slice through physical armor directly into the enemy's soul.",
       "Class": "Shadow Reaper",
       "Price": 200,
       "Currency": "Souls",
-      "Quantity": 1
+      "Quantity": 1,
+      "Description": "Twin daggers forged from spectral remnants that slice through physical armor directly into the enemy's soul."
     },
     {
       "Name": "Ashen Censer Mace",
-      "Description": "A hollow ceremonial mace emitting a constant mist of grey embers and funeral ash.",
       "Class": "Ash Bearer",
       "Price": 160,
       "Currency": "Souls",
-      "Quantity": 1
+      "Quantity": 1,
+      "Description": "A hollow ceremonial mace emitting a constant mist of grey embers and funeral ash."
     },
     {
       "Name": "Sightless Stiletto",
-      "Description": "A long, needle-thin rapier without a guard, perfectly balanced for blind combatants relying on acoustic vibrations.",
       "Class": "Blind Inquisitor",
       "Price": 175,
       "Currency": "Souls",
-      "Quantity": 1
+      "Quantity": 1,
+      "Description": "A long, needle-thin rapier without a guard, perfectly balanced for blind combatants relying on acoustic vibrations."
     },
     {
       "Name": "Greatsword of the Corrupted Commander",
-      "Description": "A rusted, notched zweihänder that echoes with the agonized screams of a fallen army.",
       "Class": "Universal",
       "Price": 350,
       "Currency": "Souls",
-      "Quantity": 1
+      "Quantity": 1,
+      "Description": "A rusted, notched zweihänder that echoes with the agonized screams of a fallen army."
     }
   ],
-   "Armor": [
+  "Items": [
     {
-        
+      "Code": "wp_rusted_blade",
+      "Name": "Rusted Blade",
+      "Type": "Weapon",
+      "Price": 60,
+      "Stock": 20,
+      "Tradable": true,
+      "Description": "A notched sword taken from the first battlefield.",
+      "Effects": {
+        "Attack": 5
+      }
+    },
+    {
+      "Code": "wp_ethereal_dagger",
+      "Name": "Ethereal Dagger",
+      "Type": "Weapon",
+      "Price": 150,
+      "Stock": 10,
+      "Tradable": true,
+      "Description": "A blade of condensed spirit that weighs nothing.",
+      "Effects": {
+        "Attack": 10,
+        "Speed": 3
+      }
+    },
+    {
+      "Code": "wp_grey_censer",
+      "Name": "Grey Censer",
+      "Type": "Weapon",
+      "Price": 140,
+      "Stock": 10,
+      "Tradable": true,
+      "Description": "Burns the ashes of the fallen to empower spiritual strikes.",
+      "Effects": {
+        "Magic": 10
+      }
+    },
+    {
+      "Code": "ar_chain_vest",
+      "Name": "Chain Vest",
+      "Type": "Armor",
+      "Price": 80,
+      "Stock": 15,
+      "Tradable": true,
+      "Description": "Rusty rings stitched to old leather.",
+      "Effects": {
+        "Defense": 6
+      }
+    },
+    {
+      "Code": "ar_penitent_plate",
+      "Name": "Penitent Plate",
+      "Type": "Armor",
+      "Price": 200,
+      "Stock": 5,
+      "Tradable": true,
+      "Description": "Heavy armor covered in prayers. Slows the wearer.",
+      "Effects": {
+        "Defense": 14,
+        "Speed": -2
+      }
+    },
+    {
+      "Code": "item_cold_elixir",
+      "Name": "Cold Ash Elixir",
+      "Type": "Potion",
+      "Price": 20,
+      "Stock": 50,
+      "Tradable": true,
+      "Description": "A bitter brew that stanches wounds.",
+      "Effects": {
+        "HP": 40
+      }
+    },
+    {
+      "Code": "item_ether_tear",
+      "Name": "Ether Tear",
+      "Type": "Potion",
+      "Price": 25,
+      "Stock": 50,
+      "Tradable": true,
+      "Description": "Distillation of purified souls.",
+      "Effects": {
+        "Sanity": 30
+      }
+    },
+    {
+      "Code": "item_vigor_draught",
+      "Name": "Vigor Draught",
+      "Type": "Potion",
+      "Price": 30,
+      "Stock": 30,
+      "Tradable": true,
+      "Description": "Restores the will to keep walking.",
+      "Effects": {
+        "Energy": 30
+      }
+    },
+    {
+      "Code": "item_soul_shard",
+      "Name": "Barbed Soul Shard",
+      "Type": "Potion",
+      "Price": 40,
+      "Stock": 20,
+      "Tradable": true,
+      "Description": "A crystallized relic. Combat only: +25% damage for 3 rounds, drains 5 HP.",
+      "Effects": {
+        "HP": -5,
+        "DamageBuffPct": 25,
+        "BuffRounds": 3
+      }
+    },
+    {
+      "Code": "tl_pilgrim_lantern",
+      "Name": "Pilgrim's Lantern",
+      "Type": "Tool",
+      "Price": 70,
+      "Stock": 10,
+      "Tradable": true,
+      "Description": "Lights the fog. Carried: +10% success when exploring.",
+      "Effects": {
+        "ExploreBonus": 10
+      }
+    },
+    {
+      "Code": "tl_bone_lockpick",
+      "Name": "Bone Lockpick",
+      "Type": "Tool",
+      "Price": 45,
+      "Stock": 10,
+      "Tradable": true,
+      "Description": "Opens any path out. Carried: +15% chance to flee combat.",
+      "Effects": {
+        "FleeBonus": 15
+      }
+    },
+    {
+      "Code": "eq_penitent_chain",
+      "Name": "Penitent's Chain",
+      "Type": "Special",
+      "Price": 120,
+      "Stock": 0,
+      "Tradable": true,
+      "Description": "A heavy iron ring. Relic: +8 DEF while equipped.",
+      "Effects": {
+        "Defense": 8
+      }
+    },
+    {
+      "Code": "eq_obsidian_eye",
+      "Name": "Obsidian Eye",
+      "Type": "Special",
+      "Price": 180,
+      "Stock": 5,
+      "Tradable": true,
+      "Description": "A darkened gem that reflects the truth. Relic: +15% accuracy.",
+      "Effects": {
+        "Accuracy": 15
+      }
+    },
+    {
+      "Code": "key_seal_forgotten",
+      "Name": "Seal of the Forgotten",
+      "Type": "Special",
+      "Price": 0,
+      "Stock": 0,
+      "Tradable": false,
+      "Description": "A worn bronze symbol required to break the chains sealing the deeper levels.",
+      "Effects": {}
     }
-   ],
-   "Potions": [],
-   "Tools": [],
-   "Relics": []
+  ],
+  "Classes": [
+    {
+      "Name": "Iron Penitent",
+      "BaseHP": 150,
+      "BaseSanity": 60,
+      "Attack": 20,
+      "Magic": 5,
+      "Defense": 25,
+      "Speed": 8,
+      "Description": "A knight bent under the weight of a broken vow, bound to armor corroded by sacred chains.",
+      "Ability": "Martyrdom of the Flesh",
+      "AbilityDescription": "Strikes with ATK plus 50% of the damage taken in the last round."
+    },
+    {
+      "Name": "Shadow Reaper",
+      "BaseHP": 80,
+      "BaseSanity": 80,
+      "Attack": 25,
+      "Magic": 15,
+      "Defense": 10,
+      "Speed": 20,
+      "Description": "The soul of a mercenary who refuses to forget his final contract, wielding blades of ethereal energy.",
+      "Ability": "Essence Sever",
+      "AbilityDescription": "Ignores enemy DEF and deals 1.5x ATK as direct soul damage."
+    },
+    {
+      "Name": "Ash Bearer",
+      "BaseHP": 100,
+      "BaseSanity": 100,
+      "Attack": 10,
+      "Magic": 30,
+      "Defense": 15,
+      "Speed": 12,
+      "Description": "A former war priest who channels the remains of fallen comrades to erect shields and invoke grey flames.",
+      "Ability": "Shroud of Oblivion",
+      "AbilityDescription": "Deals MAG damage, reduces enemy accuracy by 30% for 2 rounds and restores 15 SAN."
+    },
+    {
+      "Name": "Blind Inquisitor",
+      "BaseHP": 110,
+      "BaseSanity": 120,
+      "Attack": 18,
+      "Magic": 20,
+      "Defense": 20,
+      "Speed": 15,
+      "Description": "A combatant who gouged out his own sight to avoid succumbing to the hallucinations of purgatory.",
+      "Ability": "Abyssal Perception",
+      "AbilityDescription": "Reveals the target's weak point: +35% damage taken for 3 rounds, then strikes with MAG."
+    }
+  ],
+  "Enemies": [
+    {
+      "Code": "en_ash_wraith",
+      "Name": "Ash Wraith",
+      "Level": 1,
+      "HP": 40,
+      "Attack": 12,
+      "Defense": 3,
+      "Speed": 10,
+      "Magic": 6,
+      "RewardXp": 30,
+      "RewardSouls": 20,
+      "CritChance": 0.05,
+      "DodgeChance": 0.05,
+      "AbilityChance": 0.2,
+      "AbilityName": "Cinder Wail",
+      "AbilityType": "Mental",
+      "DropItem": "item_cold_elixir",
+      "DropChance": 0.3,
+      "Description": "A flicker of burnt soul that haunts the extinguished campfires."
+    },
+    {
+      "Code": "en_wraith_guilt",
+      "Name": "Wraith of Guilt",
+      "Level": 2,
+      "HP": 50,
+      "Attack": 14,
+      "Defense": 5,
+      "Speed": 18,
+      "Magic": 15,
+      "RewardXp": 45,
+      "RewardSouls": 30,
+      "CritChance": 0.05,
+      "DodgeChance": 0.15,
+      "AbilityChance": 0.35,
+      "AbilityName": "Abyssal Whisper",
+      "AbilityType": "Mental",
+      "DropItem": "item_ether_tear",
+      "DropChance": 0.25,
+      "Description": "An ethereal entity born from unresolved remorse. Drains sanity before the flesh."
+    },
+    {
+      "Code": "en_petrified_warrior",
+      "Name": "Petrified Warrior",
+      "Level": 4,
+      "HP": 120,
+      "Attack": 28,
+      "Defense": 25,
+      "Speed": 5,
+      "Magic": 0,
+      "RewardXp": 90,
+      "RewardSouls": 60,
+      "CritChance": 0.1,
+      "DodgeChance": 0,
+      "AbilityChance": 0.25,
+      "AbilityName": "Ground Slam",
+      "AbilityType": "Heavy",
+      "DropItem": "ar_chain_vest",
+      "DropChance": 0.1,
+      "Description": "A veteran whose armor fused with the stone of Purgatory. Slow, nearly impenetrable."
+    },
+    {
+      "Code": "en_corrupted_commander",
+      "Name": "Corrupted Commander",
+      "Level": 7,
+      "HP": 250,
+      "Attack": 42,
+      "Defense": 15,
+      "Speed": 12,
+      "Magic": 8,
+      "RewardXp": 250,
+      "RewardSouls": 200,
+      "CritChance": 0.15,
+      "DodgeChance": 0.05,
+      "AbilityChance": 0.3,
+      "AbilityName": "War Lament",
+      "AbilityType": "Enrage",
+      "DropItem": null,
+      "DropChance": 0,
+      "Description": "Zone boss. Your former commander, deformed by his refusal to accept defeat."
+    }
+  ],
+  "Quests": [
+    {
+      "Code": "quest_explore_01",
+      "Name": "Whispers in the Fog",
+      "Type": "Explore",
+      "Difficulty": "Easy",
+      "MinLevel": 1,
+      "Goal": 2,
+      "TargetEnemy": null,
+      "EnergyCost": 10,
+      "RewardXp": 60,
+      "RewardSouls": 40,
+      "RewardItem": "item_cold_elixir",
+      "RewardItemQuantity": 1,
+      "Description": "Walk the Valley of Whispers and find the two lost signposts."
+    },
+    {
+      "Code": "quest_hunt_01",
+      "Name": "The Unquenchable Flame",
+      "Type": "Hunt",
+      "Difficulty": "Easy",
+      "MinLevel": 1,
+      "Goal": 5,
+      "TargetEnemy": "en_ash_wraith",
+      "EnergyCost": 0,
+      "RewardXp": 100,
+      "RewardSouls": 50,
+      "RewardItem": "item_ether_tear",
+      "RewardItemQuantity": 2,
+      "Description": "The rest campfires have gone out. Defeat 5 Ash Wraiths to rekindle them."
+    },
+    {
+      "Code": "quest_side_01",
+      "Name": "The Broken Vow",
+      "Type": "Explore",
+      "Difficulty": "Medium",
+      "MinLevel": 2,
+      "Goal": 3,
+      "TargetEnemy": null,
+      "EnergyCost": 15,
+      "RewardXp": 120,
+      "RewardSouls": 80,
+      "RewardItem": "eq_penitent_chain",
+      "RewardItemQuantity": 1,
+      "Description": "Locate and purify the 3 Altars of Penitence scattered across the map."
+    },
+    {
+      "Code": "quest_hunt_02",
+      "Name": "Stone Silence",
+      "Type": "Hunt",
+      "Difficulty": "Medium",
+      "MinLevel": 3,
+      "Goal": 2,
+      "TargetEnemy": "en_petrified_warrior",
+      "EnergyCost": 0,
+      "RewardXp": 150,
+      "RewardSouls": 120,
+      "RewardItem": null,
+      "RewardItemQuantity": 0,
+      "Description": "Two Petrified Warriors block the bridge to the lower valley. Break them."
+    },
+    {
+      "Code": "quest_main_01",
+      "Name": "Rescue of the Echo",
+      "Type": "Hunt",
+      "Difficulty": "Hard",
+      "MinLevel": 5,
+      "Goal": 1,
+      "TargetEnemy": "en_corrupted_commander",
+      "EnergyCost": 0,
+      "RewardXp": 150,
+      "RewardSouls": 300,
+      "RewardItem": "key_seal_forgotten",
+      "RewardItemQuantity": 1,
+      "Description": "Find your former Commander in the depths, defeat his corrupted form and free his soul."
+    }
+  ]
 }
