@@ -30,7 +30,6 @@ class PlayerCharacter:
     def FromRow(cls, Row):
         return cls(**{Field.name: Row[Field.name] for Field in fields(cls)})
 
-    # Experience: reaching level L requires 50 * L * (L - 1) total XP (100, 300, 600, 1000, ...)
     def TotalXpForLevel(Level):
         return Config.XP_PER_LEVEL * Level * (Level - 1) // 2
 
