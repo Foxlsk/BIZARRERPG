@@ -21,7 +21,7 @@ LoadEnv()
 
 class Config:
     # Database
-    DB_PATH = os.environ.get("PURGATORY_DB_PATH", str(BASE_DIR / "Database" / "Database.db"))
+    DB_PATH = os.environ.get("PURGATORY_DB_PATH", str(BASE_DIR / "Database.db"))
     ADMIN_USERNAME = os.environ.get("PURGATORY_ADMIN_USERNAME")
     ADMIN_EMAIL = os.environ.get("PURGATORY_ADMIN_EMAIL")
     ADMIN_PASSWORD = os.environ.get("PURGATORY_ADMIN_PASSWORD")
