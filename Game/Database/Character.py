@@ -1,5 +1,5 @@
 import sqlite3
-from Game.Config import Config
+from Config import Config
 from Database.Database import Database
 from Models.Character import PlayerCharacter
 from Utils.Errors import ValidationError
@@ -12,7 +12,7 @@ class Character:
     """
 
     def Init():
-        Database.CreateTable("Character", "Characters", """
+        Database.CreateTable("Characters", """
             CREATE TABLE Characters (
                 Id INTEGER PRIMARY KEY AUTOINCREMENT,
                 UserId INTEGER NOT NULL UNIQUE REFERENCES Users(Id) ON DELETE CASCADE,
@@ -73,3 +73,6 @@ class Character:
         """, (Model.Level, Model.Xp, Model.HP, Model.MaxHP, Model.Sanity, Model.MaxSanity, Model.Energy,
               Model.MaxEnergy, Model.Souls, Model.Attack, Model.Magic, Model.Defense, Model.Speed,
               Model.Wins, Model.Losses, Model.Id), db)
+
+
+Character.Init();

@@ -12,21 +12,16 @@ class AccountData(TypedDict):
 
 class Account:
     def Init():
-        if not Database.TableExists("Users"):
-            print("[Account] Creating Users Table")
-            Database.Execute("""
-                CREATE TABLE Users (
-                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    Username TEXT NOT NULL UNIQUE,
-                    Email TEXT NOT NULL UNIQUE,
-                    Password TEXT NOT NULL,
-                    Role TEXT NOT NULL,
-                    CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-                )
-            """)
-            print("[Account] Users Table Created")
-        else:
-            print("[Account] Users Loaded")
+        Database.CreateTable("Users", """
+            CREATE TABLE Users (
+                Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                Username TEXT NOT NULL UNIQUE,
+                Email TEXT NOT NULL UNIQUE,
+                Password TEXT NOT NULL,
+                Role TEXT NOT NULL,
+                CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
 
     def Create(Username, Email, Password):
         HashedPassword = CryptoUtils.Hash(Password)

@@ -4,3 +4,6 @@ class GameError(Exception):
 
 class ValidationError(GameError):
     """Invalid input data."""
+
+class InsufficientFunds(GameError):
+    """The character does not have enough souls."""

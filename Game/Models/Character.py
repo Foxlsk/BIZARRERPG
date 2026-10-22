@@ -1,5 +1,5 @@
 from dataclasses import dataclass, fields
-from Game.Config import Config
+from Config import Config
 from Utils.Errors import GameError, InsufficientFunds
 
 @dataclass
