@@ -5,6 +5,7 @@ from Database.Account import Account;
 from Database.Inventory import Inventory;
 from Database.Item import Item;
 from Database.Character import Character;
+from Database.Quest import Quest;
 from Helper.Resources import ResourcesHelper;
 
 # Clear Python Cache After Run
